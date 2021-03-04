@@ -6,7 +6,7 @@ For now it shows the price of bitcoin (in USD) using [Bitfinex websocket API](ht
 
 Its based on [esp-idf](https://github.com/espressif/esp-idf) (tested with v4.3-beta1) and hacked version of [esp-idf-lib](https://github.com/BugerDread/esp-idf-lib/tree/esp32-c3-hack) for ESP32-C3 (just MAX7219 library is used in this project).
 
-![foto](./foto.jpg)
+![foto](./foto-small.jpg)
 
 ## How to build the ticker
 
