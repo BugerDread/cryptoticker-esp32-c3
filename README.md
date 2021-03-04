@@ -48,7 +48,7 @@ set(EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/examples/common_components/protocol_exam
 
 ### Build and Flash
 
-- move into "esp-idf" directory and run following (please note the dot and the space, they are IMPORTATNT)
+- move into "esp-idf" directory and run following (please note the dot and the space, they are IMPORTANT)
 ```
 . export.sh
 ```
@@ -61,7 +61,7 @@ idf.py menuconfig
 - make sure "connect using WiFi interface" is selected
 - fill in your WiFi SSID and Password
 - make sure that "connect using Ethernet interface" and "Obtain IPv6 address" are NOT enabled
-- return into main menu and go to "Cryptoticker configuration" - you can set LCD brightness here (more options maybe in the future)
+- return into main menu and go to "Cryptoticker configuration" - you can set display brightness here (more options maybe in the future)
 - return into main menu and go to "Component config" -> "ESP-TLS"
 - select "Allow potentially insecure options" and "Skip server certificate verification by default" - this ovecome the need to have valid (updated) bitfinex api certificate in the code
 - save the configuration and quit menuconfig
@@ -70,5 +70,5 @@ idf.py menuconfig
 ```
 idf.py -p /dev/ttyUSB0 build flash monitor
 ```
-- wait until build and flash is finished, serial monitor will be started (press CTRL + ] to quit it) when flashing finished and your new ticker will boot up
+- wait until build and flash is finished, serial monitor will be started when flashing is finished and your new ticker will boot up (press CTRL + ] to quit the monitor)
 
