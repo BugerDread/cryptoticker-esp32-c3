@@ -71,4 +71,5 @@ idf.py menuconfig
 idf.py -p /dev/ttyUSB0 build flash monitor
 ```
 - wait until build and flash is finished, serial monitor will be started when flashing is finished and your new ticker will boot up (press CTRL + ] to quit the monitor)
+- enjoy your new bitcoin ticker :D
 
