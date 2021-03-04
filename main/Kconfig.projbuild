@@ -1,0 +1,10 @@
+menu "Cryptoticker Configuration"
+
+    config DISP_BRIGHTNESS
+        int "Display brightness"
+        range 0 15
+        default 7
+        help
+            Sets brightness of the display
+
+endmenu
