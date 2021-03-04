@@ -2,7 +2,9 @@
 
 This is cryptoticker project for ESP32-C3 RISC-V eng sample. 
 
-Its based on [esp-idf](https://github.com/espressif/esp-idf) (tested with v4.3-beta1) and hacked version of [esp-idf-lib](https://github.com/BugerDread/esp-idf-lib/tree/esp32-c3-hack) for ESP32-C3 (just MAX7219 library is used in this project)
+For now it shows the price of bitcoin (in USD) using [Bitfinex websocket API](https://docs.bitfinex.com/docs/ws-public).
+
+Its based on [esp-idf](https://github.com/espressif/esp-idf) (tested with v4.3-beta1) and hacked version of [esp-idf-lib](https://github.com/BugerDread/esp-idf-lib/tree/esp32-c3-hack) for ESP32-C3 (just MAX7219 library is used in this project).
 
 ![foto](./foto.jpg)
 
@@ -12,6 +14,7 @@ Its based on [esp-idf](https://github.com/espressif/esp-idf) (tested with v4.3-b
 
 - ESP32-C3
 - MAX7219 8-digit LED display (like https://www.aliexpress.com/item/1005001572247130.html)
+- 5 wires
 
 ### Hardware setup
 
@@ -45,7 +48,7 @@ set(EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/examples/common_components/protocol_exam
 
 ### Build and Flash
 
-- move into "esp-idf" directory and run following
+- move into "esp-idf" directory and run following (please note the dot and the space, they are IMPORTATNT)
 ```
 . export.sh
 ```
@@ -60,7 +63,7 @@ idf.py menuconfig
 - make sure that "connect using Ethernet interface" and "Obtain IPv6 address" are NOT enabled
 - return into main menu and go to "Cryptoticker configuration" - you can set LCD brightness here (more options maybe in the future)
 - return into main menu and go to "Component config" -> "ESP-TLS"
-- select "Allow potentially insecure options" and "Skip server certificate verification by default" - this ovecome the need to have valid (updated) bitfinex api certificate inside ESP
+- select "Allow potentially insecure options" and "Skip server certificate verification by default" - this ovecome the need to have valid (updated) bitfinex api certificate in the code
 - save the configuration and quit menuconfig
 - connect ESP32-C3 to the computer if not connected yet
 - buid and flash using following command (replace /dev/ttyUSB0 with your serial port)
