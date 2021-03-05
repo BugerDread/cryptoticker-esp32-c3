@@ -8,6 +8,8 @@ Based on [esp-idf](https://github.com/espressif/esp-idf) (tested with v4.3-beta1
 
 ![foto](./foto-small.jpg)
 
+Here is [youtube video](https://youtu.be/yD6nr_zuqEk) showing the build / flash process and also the ticker itself.
+
 ## How to build the ticker
 
 ### Hardware Required
