@@ -54,7 +54,7 @@ set(EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/examples/common_components/protocol_exam
 ```
 - move into "cryptoticker-esp32-c3" directory and run following
 ```
-idf.py set-target esp32c2
+idf.py set-target esp32c3
 idf.py menuconfig
 ```
 - in menuconfig go to "Example Connection Configuration"
