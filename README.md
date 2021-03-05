@@ -2,7 +2,7 @@
 
 This is cryptoticker project for ESP32-C3 RISC-V eng sample. 
 
-It shows the (live updated) price of Bitcoin (in USD), datasoure: [Bitfinex websocket API](https://docs.bitfinex.com/docs/ws-public).
+It shows the (live updated) price of Bitcoin (in USD), data source: [Bitfinex websocket API](https://docs.bitfinex.com/docs/ws-public).
 
 Its based on [esp-idf](https://github.com/espressif/esp-idf) (tested with v4.3-beta1) and hacked version of [esp-idf-lib](https://github.com/BugerDread/esp-idf-lib/tree/esp32-c3-hack) for ESP32-C3 (just MAX7219 library is used in this project).
 
